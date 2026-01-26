@@ -1,0 +1,11 @@
+{
+  "name": "claude-webhook",
+  "owner": {
+    "name": "Thai Pangsakulyanont",
+    "url": "https://github.com/dtinth"
+  },
+  "plugins": [{
+      "name": "claude-webhook",
+      "source": "./"
+  }]
+}

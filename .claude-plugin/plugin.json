@@ -1,0 +1,9 @@
+{
+  "name": "claude-webhook",
+  "description": "Asynchronously sends all Claude Code events to a webhook endpoint",
+  "version": "1.0.0",
+  "author": {
+    "name": "Thai Pangsakulyanont",
+    "url": "https://github.com/dtinth"
+  }
+}

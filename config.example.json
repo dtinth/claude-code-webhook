@@ -1,0 +1,5 @@
+{
+  "webhook_url": "https://your-webhook-endpoint.com/events",
+  "enabled": true,
+  "timeout": 60
+}
