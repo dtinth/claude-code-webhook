@@ -1,6 +1,6 @@
 # Claude Code Webhook Plugin
 
-A lightweight, asynchronous webhook plugin that sends all Claude Code events to a configured webhook endpoint. Requires `jq`.
+A lightweight, asynchronous webhook plugin that sends all Claude Code events to a configured webhook endpoint. Requires `jq`, `bash`, and `curl`.
 
 ## Configuration
 
