@@ -1,17 +1,27 @@
 # Claude Code Webhook Plugin
 
-A lightweight, asynchronous webhook plugin that sends all Claude Code events to a configured webhook endpoint. Requires `jq`, `bash`, and `curl`.
+A lightweight, asynchronous webhook plugin for Claude Code that sends all Claude Code events to a configured webhook endpoint. This plugin is just [a small Bash script](scripts/send-webhook.sh) (less than 80 lines) so you can easily audit it.
 
-## Configuration
+## Setting up
 
-Create `~/.claude-webhook/config.json`:
+**Required dependencies:** A unix-based operating system, `jq`, `bash`, and `curl`.
 
-```json
-{
+**Install the plugin:**
+
+```sh
+claude plugin marketplace add dtinth/claude-code-webhook
+claude plugin install claude-webhook
+```
+
+**Configure the plugin** at `~/.claude-webhook/config.json`:
+
+```sh
+mkdir -p ~/.claude-webhook
+echo '{
   "webhook_url": "https://your-webhook-endpoint.com/events",
   "enabled": true,
   "timeout": 60
-}
+}' > ~/.claude-webhook/config.json
 ```
 
 ### Configuration Options
